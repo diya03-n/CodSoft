@@ -1,54 +1,139 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container">
-    <div class="Calculator">
-        <form >
-            <div class="display">
-                 <input type="text"  name="display">
+ </head>
+ <body>
+        <nav >
+            <a href="" class="logo"><h1>Fruitaria</h1></a>
+                <ul class="nav_links" id="nav-links">
+                    <li> <a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <!-- <li><a href="#product">Products</a></li>
+                    <li><a href="#services">Service</a></li> -->
+                    <li><a href="#blog">Blog</a></li>
+                </ul>
+                <div class="nav_menu_btn" id="menubtn">
+                    <i class="ri-user-3-fill"></i>
+                    <i class="ri-shopping-basket-fill"></i>
+                    <i class="ri-menu-line"></i>
+                </div>
+
+        </nav>
+                        <!---------- home ------------>
+    
+    <section   id="home">
+        <div class="search-box">
+            <i class="ri-search-line"></i>
+            <input type="text" placeholder="Search">
+        </div>
+            <div class="text ">
+                <h1> Ber<span>ries</span></h1>
+                <h3 >Always filled your <span>heart with joy!</span></h3> 
+                <p>Buy fresh Berries with affordable price and highest quality product.
+                <br>Quality Uncompromised, Price Unmatched!</p> <br><br> <br>
+                <button >  Shop Now <span><i class="ri-arrow-down-line"></i></span></button>
             </div>
-        <div>
-            <input type="button"class="operator" value="AC" onclick="display.value = ''">
-            <input type="button"class="operator" value="DEL" onclick="display.value = display.value.toString().slice(0,-1)">
-            <input type="button"class="operator" value="%" onclick="display.value += '%'">
-            <input type="button"class="operator" value="/" onclick="display.value += '/'">
-        
+    </section>   
+                     <!--------------- about ---------------------->
+    <section class="about" id="about">
+        <div class="heading">
+            <h1>About Us</h1>
         </div>
-        <div>
-            <input type="button" value="7" onclick="display.value += '7'">
-            <input type="button" value="8" onclick="display.value += '8'">
-            <input type="button" value="9" onclick="display.value += '9'">
-            <input type="button"class="operator" value="*" onclick="display.value += '*'">
-            
+        <div class="box-container">
+            <div class="box">
+            <img src="assests/a2.png" alt="">
+            <h3>Fresh and Organic</h3>
+            <p>By nature, these products come with slight variation in shape, colour and size.
+            <span>"There might be minor illustration in weight during packaging
+            and you will be billed accordingly. 
+            </span></p> <br>
+           <button>Read More</button>
         </div>
-        <div>
-            <input type="button" value="4" onclick="display.value += '4'">
-            <input type="button" value="5" onclick="display.value += '5'">
-            <input type="button" value="6" onclick="display.value += '6'">
-            <input type="button"class="operator" value="-" onclick="display.value += '-'">
-            
+        <div class="box">
+            <img src="assests/a3.png" alt="">
+            <h3>Free Delivery</h3>
+            <p>Free standard delivery on all online orders. <br> Providing the highest quality service 24 hours a day. 
+               <br><span>All deliveries are carried within a day-to-day service.</span> </p> <br>
+           <button>Read More</button>
         </div>
-        <div>
-            <input type="button" value="1" onclick="display.value += '1'">
-            <input type="button" value="2" onclick="display.value += '2'">
-            <input type="button" value="3" onclick="display.value += '3'">
-            <input type="button"class="operator" value="+" onclick="display.value += '+'">
-            
+        <div class="box">
+            <img src="assests/a4.png" alt="">
+            <h3>Easy Payments</h3>
+            <p> Accept payments quickly, easily and securely. Make it easy for customers to pay almost any way and anywhere!
+            <span>A payment of a Receivable made in cash on delivery or by credit card.</span>
+                 </p> <br>
+            <button>Read More</button>
         </div>
-        <div>
-            <input type="button" value="00" onclick="display.value += '00'">
-            <input type="button" value="0" onclick="display.value += '0'">
-            <input type="button" class="operator" value="." onclick="display.value += '.'">
-            <input type="button"class="equalbtn" value="=" onclick="display.value = eval(display.value)">
         </div>
-    </form>
-    </div>
-</div>
-</body>
-</html>
+    </section>                 
+                         <!-- ------------blog------------- -->
+    <section class="blog" id="blog">
+        <div class="heading"> <h1>Our Blogs </h1></div>
+        <div class="box-container">
+            <div class="box">
+                <img src="assests/f1.jpg" alt="">
+                <div class="content">
+                    <div class="icons"><i class="ri-user-3-fill">By User</i><i class="ri-calendar-view"> 3rd May, 2021</i></div>
+                <h3>Fresh and Organic <br> Cherries</h3> 
+                <button>Read More</button>
+
+            </div></div>
+            <div class="box">
+                <img src="assests/f5.png" alt="">
+                <div class="content">
+                    <div class="icons"><i class="ri-user-3-fill">By User</i><i class="ri-calendar-view"> 22th June, 2022</i></div>
+                <h3>Fresh and Organic <br>BlueBerries</h3>
+                <button>Read More</button>
+            </div></div>
+            <div class="box">
+                <img src="assests/f6.jpg" alt="">
+                <div class="content">
+                    <div class="icons"><i class="ri-user-3-fill">By User</i><i class="ri-calendar-view"> 31th April, 2023</i></div>
+                <h3>Fresh and Organic <br> Berries</h3>
+                <button>Read More</button>
+            </div>
+        </div>
+        </div>
+    </section>
+              <!-- -------------footer----- -->
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Our Service</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Affiliate Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Shipping</a></li>
+                        <li><a href="">Returns</a></li>
+                        <li><a href="">Order Status</a></li>
+                        <li><a href="">Payments Option</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href=""><i class="ri-facebook-fill"></i></a>
+                        <a href=""><i class="ri-twitter-fill"></i></a>
+                        <a href=""><i class="ri-instagram-fill"></i></a>
+                        <a href=""><i class="ri-linkedin-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ </body>
+ </html>

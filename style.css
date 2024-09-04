@@ -1,58 +1,327 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Dosis:wght@200..800&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
-.container{
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+}
+nav{
     width: 100%;
-    height: 100vh;
-    background: #e3f9ff;
-    align-items: center;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    position: fixed;
+    right: 0;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
 }
 
-.Calculator{
-border: 1px solid #717377;
-padding: 20px;
-border-radius: 16px;
-background: linear-gradient(45deg, #0a0a0a, #3a4452);
-box-shadow: 0px 3px 15px rgba(113,115, 119, 0.5);
-}
-.Calculator form input{
-    border: 0;
-    outline: 0;
-    margin: 10px ;
-    width: 60px;
-    height: 60px;
-    background: transparent;
-    box-shadow: -8px -8px 15px rgba(225, 255, 255, 0.1), 5px 5px 15px rgba(0, 0,0, 0.2);
-    border-radius: 10px;
+.logo{
+    position: relative;
     font-size: 25px;
-    color: #ffff;
+    font-family: "Dancing Script", cursive;
+    text-decoration: none;
+    font-weight: 600; 
+     background: linear-gradient(to right,#ffe538,#ff0058); 
+      color: transparent; 
+     background-clip: text; 
+ 
+ }
+nav .logo{
+    width: 150px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    padding: 0 20px;
+}
+nav ul li a{
+    color: #1a1a1a;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Dosis", sans-serif;
+}
+nav ul li a:hover{
+    color: red;
+}
+.nav_menu_btn i{
+    padding: 30px;
+    font-size: 22px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.nav_menu_btn i :hover{
+    color: red;
+}
+nav .search i:hover{
+    color: red;
+}
+
+#home{
+    background-image:url(assests/back.jpg);
+    font-family: "Dosis", sans-serif;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position:  top 25%  right 0;
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1;
+    box-shadow: 0 0 8px rgba(0,0,0,0.9);
+    overflow: hidden;
+}
+.search-box{
+    width: 25%;
+    display: flex;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0 30px;
+}
+.search-box i{
+    display: inline-block;
+    padding: 0 25px;
+    font-size: 22px;
     cursor: pointer;
 }
-form .display{
-    display: flex;
-    justify-content: flex-end;
-    margin: 20px 0;
+.search-box input{
+    width: 100%;
+    margin-left: 5px;
+    font-size: 20px;
+    border: 0;
+    outline: none;
 }
-form .display input{
-    text-align: right;
-    flex: 1;
-    font-size: 45px;
-    box-shadow: none;
+ .text h1{
+    font-size: 100px;
 }
-input::placeholder{
-    color: #ffff;
+span{
+    color: #f5053d;
+}
+.text h3{
+    margin: 10px 0;
+    font-size: 35px;
+    padding-bottom: 15px;
+}
+.text p{
+    font-size: 25px;
+    margin: 10px 0;
+
+}
+ button{
+padding: 7px 30px;
+margin-right: 15px;
+outline: none;
+border: 1px solid #f5053d;
+border-radius: 20px;
+cursor: pointer;
+color: #f5053d;
+background: transparent;
+background: linear-gradient(#f5053d,#f14a60);
+box-shadow: 0 2px 15px rgba(248, 38, 103, 0.26);
+color: #fff;
+}
+button span{
+    color: #fff;
 }
 
-form input.equalbtn{
-    background-color: #3e05fd;
+/* -------------------about---------------- */
+#about{
+    margin: 0;
+    padding: 15px 9%;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-decoration: none;
+    transition: 0.2s linear;
+    padding-bottom: 50px;
+    overflow: hidden;
 }
- form input.operator{
-    color: #590af7;
+.heading h1{
+    color: black;
+    font-size: 55px;
+    text-align: center;
+    margin-top: 35px;
+    font-family: "Dosis", sans-serif;
 }
+.about .box-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 20px;
+    gap: 35px;
+    font-family: "Dosis", sans-serif;
+}
+.about .box-container .box{
+    border: 0px solid red;
+    padding: 3px 2px;
+    background: white;
+    text-align: center;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+.about .box-container .box:hover{
+    box-shadow: 1px 1px 10px 4px red;
+}
+.about .box-container .box img{
+    margin: 1px 0;
+    height: 15rem;
+}
+.about .box-container .box h3{
+    font-size: 20px;
+    line-height: 1.8;
+}
+.about .box-container .box p{
+    font-size: 15px;
+}
+/* -------------------------blog-------------------- */
+#blog{
+    margin: 0;
+    padding: 15px 9%;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-decoration: none;
+    transition: 0.2s linear;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+.heading h1{
+    color: black;
+    font-size: 55px;
+    text-align: center;
+    margin-top: 35px;
+    font-family: "Dosis", sans-serif;
+}
+.blog .box-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px 20px;
+    gap: 15px;
+    font-family: "Dosis", sans-serif;
+}
+.blog .box-container .box{
+    border: 0px solid red;
+    padding: 3px 2px;
+    background: white;
+    text-align: center;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+blog .box-container .box .content{
+    padding: 2rem;
+}
+.blog .box-container .box .content .icons{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.5rem;
+}
+.blog .box-container .box .content .icons a{
+    color: red;
+    font-size: 20px;
+}
+.blog .box-container .box .content .icons a i{
+    color:red;
+    padding-right: 20px;
+}
+.blog .box-container .box:hover{
+    box-shadow: 1px 1px 10px 4px red;
+}
+.blog .box-container .box img{
+    margin: 1px 0;
+    height: 15rem;
+}
+.blog .box-container .box h3{
+    font-size: 20px;
+    line-height: 1.8;
+}
+             /* footer */
+.container{
+    max-width: 1580px;
+    background-color: #f14a60;
+}             
+.row{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+ul{
+    list-style: none;
+}
+
+.footer-col{
+    width: 30%;
+    padding: 25px;
+}
+.footer-col h4{
+    font-size: 20px;
+    color: #fff;
+    text-transform: capitalize;
+    font-family: "Dosis", sans-serif;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: relative;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+    background-color: black;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+color: #fff;
+padding-left: 10px;
+}
+.footer-col .social-links a{
+display: inline-block;
+height: 40px;
+width: 40px;
+background-color: rgba(255,255,255,0.2);
+margin: 0 10px 10px 0;
+text-align: center;
+line-height: 40px;
+border-radius: 50%;
+color: #fff;
+transition: all 0.3s ease;
+font-size: 15px;
+}
+
+.footer-col .social-links a:hover{
+    color: #f14a60;
+    background-color: aliceblue;
+}
+
+
